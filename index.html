@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Responsif</title>
+  <!-- CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">StarbhakApp</div>
+
+    <!-- Tombol hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Menu -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Beranda</a>
+      <a href="#about">About</a>
+      <a href="http://wa.me//6285719379665">Kontak</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <!-- Isi halaman -->
+  <section class="home" id="home">
+    <h1>Website Aplikasi Premium Murah & Layanan Digital Terpercaya</h1>
+    <p>
+      Nikmati kemudahan Layanan Aplikasi Premium Dan Solusi Digital Lainnya
+      Dengan Harga Murah Dan Proses Cepat cuma di StarbhakApp
+    </p>
+    <a href="#layanan" class="layanan-btn" style="margin: 20px;">Pilih Layanan</a>
+  </section>
+
+  <section class="about" id="about" 
+           style="background-color: #2d353d; text-align: right; padding: 20px; color: rgb(31, 1, 70);">
+    <h1>Mengapa Memilih Kami</h1>
+    <p>StarbhakApp adalah pilihan terbaik untuk kebutuhan digital anda, karena:</p>
+    <h3>Harga Kompetitif</h3>
+  </section>
+
+  <section class="layanan" id="layanan" 
+           style="background-color: #58A0C8; text-align: center; padding: 20px;">
+    <h1>Daftar Layanan</h1>
+    <div style="height: 1000px;"></div>
+  </section>
+
+  <!-- Script untuk hamburger -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
