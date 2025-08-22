@@ -74,9 +74,9 @@ body {
 .layanan-item {
   background-color: rgb(8, 58, 151);
   color: white;;
-  border-radius: 50px;
+  border-radius: 20px;
   display: inline-block;
-  width: 150px;
+  width: 100px;
 }
 
 .layanan-item img {
@@ -89,7 +89,7 @@ body {
   text-decoration: none;
   color: white;
   display: block;
-  border-radius: 50px;
+  border-radius: 20px;
   text-align: center;
   padding: 10px 0;
 }
