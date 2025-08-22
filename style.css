@@ -37,10 +37,11 @@ body {
   padding: 10px 50px; 
   border-radius: 30px;
   margin: 20px 0;
+  font-size: 18px;
 }
 
 .home a:hover {
-  background-color: #47475c;
+  background-color: #34699A;
 }
 
 /* Tombol hamburger */
@@ -70,6 +71,33 @@ body {
   background-color: #7c7979;
 }
 
+.layanan-item {
+  background-color: rgb(8, 58, 151);
+  color: white;;
+  border-radius: 50px;
+  display: inline-block;
+  width: 150px;
+}
+
+.layanan-item img {
+  width: 30%;
+  height: auto;
+  
+}
+
+.layanan-item a  {
+  text-decoration: none;
+  color: white;
+  display: block;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.layanan-item a:hover {
+  background-color: #34699A;
+}
+
 /* Responsif untuk HP */
 @media (max-width: 768px) {
   .hamburger {
@@ -80,7 +108,7 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #57564F;
+    background-color: #113F67;
   }
 
   .nav-links a, .dropdown .dropbtn {
