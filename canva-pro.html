@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Canva</title>
+
+    <style>
+        .logo {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 14px 0;
+        }
+
+        .navbar {
+            background-color: #113F67;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            background-color: #415b7c;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #113F67;
+  }
+
+  .nav-links a, .dropdown .dropbtn {
+    text-align: left;
+    padding: 14px;
+    width: 50%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Dropdown di mode mobile */
+  .dropdown-content {
+    position: relative;
+    box-shadow: none;
+  }
+}
+    </style>
+</head>
+<body  style="margin: 0; font-family: Arial, sans-serif;">
+    <header class="navbar">
+    <div class="logo">StarbhakApp</div>
+
+    <!-- Tombol hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Menu -->
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Beranda</a>
+      <a href="#about">About</a>
+      <a href="http://wa.me//6285719379665">Kontak</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <section class="price" id="price" 
+           style="background-color: #58A0C8; text-align: center; padding: 20px; height: 1000px;">
+    <h1>keranjang</h1>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
