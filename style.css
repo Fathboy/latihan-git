@@ -32,16 +32,20 @@ body {
 
 .layanan-btn {
   text-decoration: none; 
-  color: white; 
-  background-color: #1d2b3a; 
+  color: hsl(0, 0%, 0%); 
+  background-color: #064a83; 
   padding: 10px 50px; 
   border-radius: 30px;
+  border: 3px solid hsl(0, 0%, 0%);
   margin: 20px 0;
   font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
 }
 
 .home a:hover {
-  background-color: #34699A;
+  background-color: hsl(0, 0%, 0%);
+  color: #064a83;
 }
 
 /* Tombol hamburger */
@@ -68,7 +72,7 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: #7c7979;
+  background-color: #415b7c;
 }
 
 .layanan-item {
@@ -77,12 +81,13 @@ body {
   border-radius: 20px;
   display: inline-block;
   width: 100px;
+  animation: floating 3s ease-in-out infinite;
+  filter: drop-shadow(2px 4px 6px rgb(255, 255, 255));
 }
 
 .layanan-item img {
   width: 30%;
   height: auto;
-  
 }
 
 .layanan-item a  {
@@ -126,4 +131,10 @@ body {
     position: relative;
     box-shadow: none;
   }
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
